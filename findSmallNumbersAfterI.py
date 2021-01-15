@@ -10,11 +10,11 @@ array = list(map(int, input('> ').split(' ')))
 new_array = []
 
 for i in range(len(array)):
-    nums = []
+    counter = 0
     for j in range(i+1, len(array)):
         if array[i] > array[j]:
-            nums.append(array[j])
-    new_array.append(nums)
+            counter += 1
+    new_array.append(counter)
 
 for x in new_array:
-    print(len(x), end=' ')
+   print(x, end=' ')
