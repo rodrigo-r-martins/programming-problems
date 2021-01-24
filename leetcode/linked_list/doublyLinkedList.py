@@ -8,16 +8,16 @@ The doubly linked list works in a similar way but has one more reference field w
 """
 
 class Node():
-  def __init__(self, value):
+  def __init__(self, value=0):
     self.value = value
     self.next = None
     self.prev = None
 
 
 class DoublyLinkedList():
-  def __init__(self):
+  def __init__(self, head=None):
     # Constructor
-    self.head = None
+    self.head = head
     self.length = 0
   
   def __repr__(self):
